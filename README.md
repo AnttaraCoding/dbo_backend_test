@@ -15,6 +15,6 @@ Cara Mengunakan :
 2. Setting config database aplikasi pada /src/config/config.js
 3. migration table dengan cara **yarn migration || npm run migration**
 4. **yarn serve || npm run serve** untuk memulai mengunakan
-5. silahkan import file configurasi postman yang ada didalam directory applikasi
+5. silahkan import collection file postman yang ada didalam directory applikasi
 
 ## git clone && yarn install || npm install
