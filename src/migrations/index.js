@@ -18,4 +18,5 @@ console.log(config.dbconfig)
     await pool.execute(query);
 
     console.log(`Migration success`)
+    return
   })();
