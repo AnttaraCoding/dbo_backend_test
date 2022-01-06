@@ -18,3 +18,6 @@ Cara Mengunakan :
 5. silahkan import collection file postman yang ada didalam directory applikasi
 
 ## git clone && yarn install || npm install
+
+ERD TABEL
+![ERD TABEL](https://user-images.githubusercontent.com/88897139/148419107-57142666-e9ad-402d-b938-48e52003110d.png)
