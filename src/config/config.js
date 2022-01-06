@@ -24,12 +24,7 @@ let dbconfig        = { connectionLimit, host, user, password, database }
 module.exports = {
     base_url,
     dbconfig,
-    bristarsurl,
-    ldap_url,
     jwtkey,
     jwtextime,
-    port,
-    bristarsurl,
-    bristarsid,
-    bristarskey
+    port
 };
