@@ -9,5 +9,12 @@ by: Andra Manday
 * [Jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) — JSON Web Token(JWT) kita gunakan untuk authentication and authorization. sangat penting sebagai proteksi data.
 * [nodemon](https://nodemon.io/) — Nodemon will re-run the express server every time we make changes to our code.
 
+Cara Mengunakan :
+
+1. Create database mysql di local atau server anda sendiri
+2. Setting config database aplikasi pada /src/config/config.js
+3. migration table dengan cara **yarn migration || npm run migration**
+4. **yarn serve || npm run serve** untuk memulai mengunakan
+5. silahkan import file configurasi postman yang ada didalam directory applikasi
 
 ## git clone && yarn install || npm install
