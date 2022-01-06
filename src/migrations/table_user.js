@@ -4,7 +4,6 @@ const mysql = require('mysql2/promise');
 async function createDb(){
     const pool = mysql.createPool(config.dbconfig);
 
-    let deleteQuery = `DROP TABLE IF EXISTS users`;
     let createQuery = `CREATE TABLE users(
         id bigint(0) UNSIGNED NOT NULL AUTO_INCREMENT,
         username varchar(35) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
@@ -20,7 +19,6 @@ async function createDb(){
       ) ENGINE = InnoDB AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic`;
 
     try { 
-        await pool.execute(deleteQuery);
         await pool.execute(createQuery);
         console.log("Table created users successfully.");
     } catch (err) {
@@ -29,6 +27,5 @@ async function createDb(){
 
     return true;
 }
-
 
 module.exports = createDb

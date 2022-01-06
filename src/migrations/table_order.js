@@ -4,7 +4,6 @@ const mysql = require('mysql2/promise');
 async function createDb(){
     const pool = mysql.createPool(config.dbconfig);
 
-    let deleteQuery = `DROP TABLE IF EXISTS orders`;
     let createQuery = `CREATE TABLE orders  (
       id bigint(0) UNSIGNED NOT NULL AUTO_INCREMENT,
       order_id varchar(10) NOT NULL,
@@ -26,7 +25,6 @@ async function createDb(){
     ) ENGINE = InnoDB AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic`;
 
     try { 
-        await pool.execute(deleteQuery);
         await pool.execute(createQuery);
         console.log("Table created orders successfully.");
     } catch (err) {
