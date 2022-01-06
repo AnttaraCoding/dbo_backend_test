@@ -31,6 +31,4 @@ async function createDb(){
 }
 
 
-createDb()
-
 module.exports = createDb

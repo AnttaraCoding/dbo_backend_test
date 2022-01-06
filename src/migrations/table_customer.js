@@ -27,6 +27,5 @@ async function createDb(){
 
     return true;
 }
-createDb()
 
 module.exports = createDb
