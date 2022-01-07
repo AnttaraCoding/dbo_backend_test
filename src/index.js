@@ -1,3 +1,5 @@
+const swaggerUi = require('swagger-ui-express')
+const swaggerFile = require('../swagger-output.json')
 const express = require('express')
 require('express-group-routes')
 const app = express();
@@ -8,6 +10,7 @@ const port = env.port
 const logger = require('morgan')
 const bodyParser = require('body-parser') 
 const cors = require('cors')
+
 
 app.use(cors());
 app.use(logger('dev'));
@@ -20,10 +23,7 @@ app.use(bodyParser.urlencoded({
 
 const route = require('./routes/');
 
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 route(app);
-
-
-
-
 
 app.listen(port, () => console.log(`Running on 172.18.135.223:${port}`))

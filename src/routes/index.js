@@ -2,8 +2,8 @@ const Conn = require('../config/database');
 const custRoute = require('./custRoute')
 const authRoute = require('./authRoute');
 const orderRoute = require('./orderRoute');
-// const ukerRoute = require('./ukerRoute');
-// const menuRoute = require('./menuRoute');
+
+
 
 const Routes = (app) => {
     app.use(Conn.connect);
@@ -12,8 +12,6 @@ const Routes = (app) => {
         routes.group("/customer", (cust) => custRoute(cust));    
         routes.group("/auth", (auth) => authRoute(auth));
         routes.group("/order", (order) => orderRoute(order));
-        // routes.group("/uker", (uker) => ukerRoute(uker));
-        // routes.group("/menu", (menu) => menuRoute(menu));
     })
 
     app.all('/', (req,res) => {

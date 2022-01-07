@@ -3,8 +3,8 @@ const { authValidation } = require('../validations/')
 const authMiddleware = require('../middlewares/authMiddleware')
 const vld = require('../config/validation')
 
-const authRoutes = (app) => {
 
+const authRoutes = (app) => {
     app.get(
         '/',
         authMiddleware,
@@ -22,6 +22,13 @@ const authRoutes = (app) => {
         vld.runValidate,
         authController.register
     )
+
+    app.get('/signins', (req, res, next) => {
+        res.status(201).json({
+            data: [],
+            message: 'Authentication successed'
+        })
+    })
 }
 
 
