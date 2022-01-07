@@ -1,7 +1,8 @@
-NodeJs RestAPI express
+NodeJs RestAPI expres
+
 by: Andra Manday
-check my youtube [link](https://www.youtube.com/watch?v=gzLl3UCfzYw&t=501s) 
-check my porfolio [link](http://andra.antarracoding.com/) 
+
+[Youtube](https://www.youtube.com/watch?v=gzLl3UCfzYw&t=501s)  || [Portofolio](http://andra.antarracoding.com/) 
 
 This application create on WSL base UBUNTU 20.04
 
