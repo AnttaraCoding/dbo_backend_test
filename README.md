@@ -8,6 +8,7 @@ by: Andra Manday
 * [express-validator](https://www.npmjs.com/package/validator) — digunakan sebagai data validasi yang sesuai dengan keinginan sebelum disimpan didatabase.
 * [Jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) — JSON Web Token(JWT) kita gunakan untuk authentication and authorization. sangat penting sebagai proteksi data.
 * [nodemon](https://nodemon.io/) — Nodemon will re-run the express server every time we make changes to our code.
+* [swagger](https://swagger.io/) — Merupakan tools yang membantumu membuat dokumentasimu menjadi readable dan painless.
 
 Cara Mengunakan :
 
