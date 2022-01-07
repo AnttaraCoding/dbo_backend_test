@@ -1,7 +1,11 @@
 NodeJs RestAPI express
 by: Andra Manday
+check my youtube [link](https://www.youtube.com/watch?v=gzLl3UCfzYw&t=501s) 
+check my porfolio [link](http://andra.antarracoding.com/) 
 
-## Package NPM yang digunakan
+This application create on WSL base UBUNTU 20.04
+
+## Some of Package NPM 
 * [Express](https://www.npmjs.com/package/express) - framework node.js yang minimal dan flexible untuk membangun sebuah web aplikasi dan fiturnya yg bagus untuk web
 * [mysql2](https://www.npmjs.com/package/mysql2/) - Database Management System Tool yang dapat mempermudah cara kerja untuk mementukan schema dan interaksi dengan data
 * [bcrypt.js](https://www.npmjs.com/package/bcrypt) — ini berfungsi untuk merubah  password menjadi hash sebelum password disimpan didatabase.
